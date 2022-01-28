@@ -11,10 +11,16 @@
             <RowDefinition Height="70"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <Button x:Name="BntBack" HorizontalAlignment="Right" Background="Red" Foreground="White">Назад</Button>
+        
         <StackPanel Orientation="Horizontal">
             <Image Source="Resources/beauty_logo.png" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Left" Height="70"/>
-            <TextBlock VerticalAlignment="Center" Foreground="Red">Мордочка</TextBlock>
+            <TextBlock VerticalAlignment="Center" Foreground="{StaticResource ColorMain}" FontSize="30">Салон красоты "Мордочка"</TextBlock>
+        </StackPanel> 
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button x:Name="BntGuest" HorizontalAlignment="Center" Style="{StaticResource MenuButton}">Пользователь</Button>
+            <Button x:Name="Bntuest" HorizontalAlignment="Center" Style="{StaticResource MenuButton}">Гость</Button>
         </StackPanel>
+        
     </Grid>
 </Window>
+    
