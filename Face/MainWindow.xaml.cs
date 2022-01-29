@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Face.Pages;
 
 namespace Face
 {
@@ -23,6 +24,22 @@ namespace Face
         public MainWindow()
         {
             InitializeComponent();
+            Manager.MainFraim = MainFrame;
+            MainFrame.Navigate(new PageAuth());
+        }
+
+        private void MainFrame_ContentRendered(object sender, EventArgs e)
+        {
+            if (!MainFrame.CanGoBack)
+                BtnBack.Visibility = Visibility.Collapsed;
+            else
+                BtnBack.Visibility = Visibility.Visible;
+        }
+
+        private void BtnBack_Click(object sender, RoutedEventArgs e)
+        {
+                if (MainFrame.CanGoBack)
+                MainFrame.GoBack();
         }
     }
 }
