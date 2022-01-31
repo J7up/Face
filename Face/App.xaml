@@ -13,6 +13,12 @@
             <Setter Property="Margin" Value="20"/>
             <Setter Property="Background" Value="{StaticResource ColorMain}"/>
         </Style>
+        <Style TargetType="Button" x:Key="CRUDButton">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Width" Value="80"/>
+            <Setter Property="Background" Value="{StaticResource ColorMain}"/>
+        </Style>
         <Style TargetType="Control" x:Key="MainControl">
             <Setter Property="VerticalAlignment" Value="Center"></Setter>
             <Setter Property="Width" Value="150"></Setter>

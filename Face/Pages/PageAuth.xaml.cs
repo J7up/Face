@@ -24,5 +24,15 @@ namespace Face.Pages
         {
             InitializeComponent();
         }
+
+        private void BntAdmin_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFraim.Navigate(new PageAdmin());
+        }
+
+        private void BntGuest_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFraim.Navigate(new PageAdmin());
+        }
     }
 }
